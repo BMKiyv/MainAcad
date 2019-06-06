@@ -1,0 +1,36 @@
+body {
+    display: block;
+    height: 900px;
+    width: 1200px;
+    background-color: #ccc;
+    background-image: url(https://q-ak.bstatic.com/images/hotel/max1024x768/695/69519299.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 10px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: italic;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+
+ul>li~a:visited {
+    color: red;
+}
+
+p {
+    color: darkslategray;
+    text-indent: 20px;
+}

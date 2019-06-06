@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    padding: 15px;
+    background-color: cornflowerblue;
+}
+
+.b1 {
+    padding: 10px;
+    color: white;
+    background-color: tomato;
+    margin-right: 10px;
+}
+
+.b2 {
+    padding: 10px;
+    color: white;
+    background-color: tomato;
+    margin-right: 10px;
+}
+
+.b3 {
+    padding: 10px;
+    color: white;
+    background-color: tomato;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.content {
+    margin-top: 15px;
+}
+
+.art {
+    display: flex;
+    flex-direction: row;
+}
+
+.c {
+    padding: 10px;
+    flex: 2;
+    margin-top: 15px;
+    border: 1px solid beige;
+    background-color: beige;
+}
+
+.d {
+    padding: 10px;
+    flex-basis: 200px;
+    margin-top: 15px;
+    border: 1px solid antiquewhite;
+    background-color: floralwhite;
+}
+
+.footer {
+    display: flex;
+    margin: 15px 0px;
+}
+
+.but {
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    flex: 0 0 200px;
+}
+
+.fut {
+    display: flex;
+    background-color: chocolate;
+    color: white;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.apply {
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid darkred;
+    align-self: flex-end;
+    padding: 10px;
+    margin-left: 3px;
+}

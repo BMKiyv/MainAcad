@@ -1,0 +1,70 @@
+body {
+    background-image: url(./images/space.jpg);
+    background-color: #ccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sun {
+    position: relative;
+    display: block;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 303px;
+    top: 269px;
+    box-shadow: 1px 1px 0px 1px yellowgreen;
+    z-index: 2;
+}
+
+.orbit {
+    position: relative;
+    height: 450px;
+    width: 450px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: 119px
+}
+
+.mars {
+    position: absolute;
+    background-color: crimson;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 204px;
+    left: -20px;
+}
+
+.anim {
+    animation-name: a1;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes a1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.anim:hover {
+    animation-play-state: paused;
+}
+
+.sun:hover {
+    transform: scale(1.2, 1.2);
+    transition: .5s linear;
+}
+
+.mars:hover {
+    transform: scale(1.2, 1.2);
+    transition: .5s linear;
+}
