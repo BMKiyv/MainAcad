@@ -1,0 +1,18 @@
+.aside {
+    width: 250px;
+    background-color: $back1;
+    border: solid $bord2 1px;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.scroll {
+    top: 0px;
+    position: sticky;
+    display: block;
+    z-index: 10;
+    min-height: 10em;
+    font-family: "Open Sans";
+}

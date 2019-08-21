@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=cyrillic-ext");
+@font-face {
+  font-family: "ShopinScript";
+  src: url(../fonts/shopin.ttf);
+  src: local(ShopinScript), url(../fonts/shopin.ttf);
+  font-weight: bolder;
+  font-style: italic;
+}
+.fonts {
+  font-family: "ShopinScript", "Open Sans";
+  color: lightseagreen;
+  font-weight: bold;
+  text-align: center;
+}
+
+.head {
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  display: flex;
+  padding: 15px;
+  background-color: #FFEBCD;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 80px;
+}
+
+.inner {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  align-items: center;
+}
+
+.nav {
+  overflow: hidden;
+  align-items: center;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  background-color: #fcfc88;
+  box-shadow: 2px 2px 4px goldenrod;
+}
+.nav ul {
+  padding: 0px;
+}
+.nav li {
+  list-style: none;
+  margin: 5px 10px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  display: inline-flex;
+  justify-content: center;
+  background-color: blanchedalmond;
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: lightseagreen;
+}
+
+.hidden {
+  display: none;
+}
+
+.g3 {
+  top: 0px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  background-color: rosybrown;
+  transition: all 0.2s linear 0.2s;
+}
+
+.soc {
+  padding: 10px;
+  display: none;
+  justify-content: space-around;
+  border-radius: 5px;
+  background-color: #fcfc88;
+  border: 1px solid goldenrod;
+  box-shadow: 2px 2px 4px goldenrod;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  background-color: darkslategray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: floralwhite;
+  padding: 15px;
+  margin: 10px;
+}
+
+.foot > div {
+  background-color: blanchedalmond;
+}
+
+.aside {
+  width: 250px;
+  background-color: #fcfc88;
+  border: solid gray 1px;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.scroll {
+  top: 0px;
+  position: sticky;
+  display: block;
+  z-index: 10;
+  min-height: 10em;
+  font-family: "Open Sans";
+}
+
+.center {
+  max-width: 100%;
+  display: flex;
+  margin: 10px;
+}
+
+.sec {
+  display: flex;
+  justify-content: center;
+  width: calc(100%-250px);
+}
+
+.secin {
+  background-color: #fcfc88;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: solid gray 1px;
+  border-radius: 5px;
+}
+.secin h1,
+.secin h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  align-self: center;
+}
+
+.akkord {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+.art {
+  display: flex;
+  height: 100%;
+}
+.art h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.art2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+}
+.art2 .img1 {
+  max-width: 100%;
+  position: unset;
+  opacity: 1;
+}
+.art2 img {
+  width: 30%;
+  height: 30%;
+  top: 35%;
+  left: 35%;
+  z-index: 0;
+  position: absolute;
+  opacity: 0.1;
+}
+
+.art2:hover {
+  background-color: burlywood;
+  opacity: 0.3;
+  transition: all 0.5s linear 0.2s;
+  z-index: 1;
+}
+.art2:hover img:hover {
+  opacity: 1;
+  z-index: 3;
+  transform: scale(1.2);
+  transition: all 0.5s linear 0.2s;
+}
+
+.box {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: black;
+}
+
+.bottom {
+  display: flex;
+  background-color: blanchedalmond;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.logo {
+  background-color: #fcfc88;
+  text-shadow: 2px 2px 4px goldenrod;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px goldenrod;
+  font-size: 1.6em;
+  padding: 15px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.login {
+  background-color: #fcfc88;
+  text-shadow: 2px 2px 4px goldenrod;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px goldenrod;
+  font-size: 1.6em;
+  padding: 15px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.button {
+  background-color: #fcfc88;
+  text-shadow: 2px 2px 4px goldenrod;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px goldenrod;
+  font-size: 1.6em;
+  padding: 15px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.button:hover::after,
+.login:hover::after,
+.logo:hover::after {
+  animation: sheen 1s forwards;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+.button:hover,
+.login:hover,
+.logo:hover {
+  animation: scal 1s forwards;
+}
+
+@keyframes scal {
+  100% {
+    transform: scale(1.05);
+  }
+}
+@media (max-width: 1023px) {
+  .center {
+    max-height: 100%;
+    display: flex;
+    margin: 10px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .g3 {
+    top: 0px;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    background-color: rosybrown;
+    z-index: -1;
+    transition: all 0.2s linear 0.2s;
+  }
+
+  .g1 {
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 10px;
+    margin: 0;
+    width: 200px;
+    height: 100%;
+    right: -200px;
+    box-sizing: border-box;
+    background-color: rosybrown;
+    z-index: 2;
+    transition: right 0.3s;
+    border-radius: 5px;
+  }
+  .g1 .gmedia {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+  }
+  .g1 .gmedia .nav {
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    background-color: #fcfc88;
+    box-shadow: 2px 2px 4px goldenrod;
+  }
+  .g1 .soc {
+    display: flex;
+    margin-top: auto;
+  }
+
+  .g2 {
+    color: aqua;
+    background-color: #f39def;
+    padding: 5px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 3;
+    width: 25px;
+    top: 45px;
+    transition: right 0.2s;
+    right: 25px;
+    border-radius: 3px;
+  }
+
+  .g2 span {
+    display: block;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0 0;
+    transition: all 0.2s linear 0.2s;
+    position: relative;
+    border-radius: 2px;
+  }
+
+  .g2 span.one {
+    margin-top: 0;
+  }
+
+  #hidpar:checked ~ .g2 {
+    right: 200px;
+  }
+
+  #hidpar:checked ~ .g1 {
+    right: 0;
+  }
+
+  #hidpar:checked ~ .g2 span.one {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+
+  #hidpar:checked ~ .g2 span.two {
+    opacity: 0;
+  }
+
+  #hidpar:checked ~ .g2 span.three {
+    transform: rotate(-45deg);
+    top: -10px;
+  }
+
+  #hidpar:checked ~ .g3 {
+    opacity: 0.7;
+    z-index: 1;
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .sec {
+    display: flex;
+    justify-content: center;
+  }
+  .sec .art {
+    display: inline-block;
+  }
+  .sec .art .art2 img {
+    top: 55%;
+  }
+}
+@media (min-width: 1024px) {
+  .g1 {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .gmedia {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .g3 {
+    z-index: -1;
+  }
+
+  .aside {
+    flex-shrink: 0;
+  }
+
+  .sec {
+    display: flex;
+    justify-content: center;
+  }
+
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

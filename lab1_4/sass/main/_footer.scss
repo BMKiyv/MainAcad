@@ -1,0 +1,14 @@
+.foot {
+    display: flex;
+    justify-content: center;
+    background-color: $back3;
+    border: 1px solid $bord2;
+    border-radius: 5px;
+    color: $fontf;
+    padding: 15px;
+    margin: 10px;
+}
+
+.foot>div {
+    background-color: $back6;
+}

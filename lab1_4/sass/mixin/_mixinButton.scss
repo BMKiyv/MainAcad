@@ -1,0 +1,86 @@
+@mixin button {
+    background-color: #fcfc88;
+    text-shadow: 2px 2px 4px goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px goldenrod;
+    font-size: 1.6em;
+    padding: 15px;
+    display: flex;
+}
+
+.logo {
+    @include button;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.login {
+    @include button;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.login::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.button {
+    @include button;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.button:hover::after,
+.login:hover::after,
+.logo:hover::after {
+    animation: sheen 1s forwards;
+}
+
+@keyframes sheen {
+    100% {
+        transform: rotateZ(60deg) translate(1em, -9em);
+    }
+}
+
+.button:hover,
+.login:hover,
+.logo:hover {
+    animation: scal 1s forwards;
+}
+
+@keyframes scal {
+    100% {
+        transform: scale(1.05);
+    }
+}
