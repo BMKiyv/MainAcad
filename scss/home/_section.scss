@@ -1,0 +1,117 @@
+section {
+    padding: 60px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.text {
+    color: #1f3851;
+    z-index: 5;
+    margin: 60px 20px;
+}
+
+.central {
+    position: relative;
+    margin-top: 71px;
+    overflow: hidden;
+    background: rgb(219, 223, 227);
+}
+
+.container {
+    margin: 10px 0px;
+}
+
+.card1 {
+    position: relative;
+    width: 90%;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: cadetblue;
+    box-shadow: 2px 2px 8px;
+    overflow: hidden;
+    &:hover {
+        .speciality {
+            margin-top: 0px;
+            transform: translateY(calc(100%-100px));
+        }
+    }
+}
+
+.speciality {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 187px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: .5s ease-in;
+    height: inherit;
+}
+
+.backFE {
+    height: 100%;
+    background-image: url(../images/back3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: cadetblue;
+}
+
+.backQA {
+    height: 100%;
+    background-image: url(../images/back15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: cadetblue;
+}
+
+.backJava {
+    height: 100%;
+    background-image: url(../images/back12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: cadetblue;
+}
+
+.backPHP {
+    height: 100%;
+    background-image: url(../images/back14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: cadetblue;
+}
+
+#start {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: burlywood;
+    font-size: 21px;
+    font-weight: 400;
+    color: grey;
+    text-align: center;
+    display: table;
+    margin: 0px auto;
+    padding: 10px 15px;
+}
+
+#start:hover {
+    background: #e0a482;
+}
+
+.maxwidth {
+    background: #dbdfe3;
+    max-width: 1280px;
+    padding: 0px 10px;
+    margin: 0px auto;
+    text-align: center;
+}
