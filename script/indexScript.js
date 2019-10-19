@@ -52,3 +52,19 @@ function toggleBurger() {
         sect.classList.add("active")
     }
 }
+
+let cityName = document.querySelectorAll('.cities'),
+    cityShow = document.querySelector('.geo'),
+    cityBlock = document.querySelector('.city'),
+    cityArea = document.querySelector('.hidlabel1'),
+    templ = '';
+
+cityBlock.addEventListener('click', function(event) {
+    let x = event.target,
+        y = cityArea.innerHTML;
+    cityArea.innerHTML = x.innerHTML
+    x.innerHTML = y
+    templ = y
+    templ = cityArea.innerHTML
+        // console.log(templ)
+});
