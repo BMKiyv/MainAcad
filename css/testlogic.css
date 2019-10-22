@@ -64,7 +64,7 @@ footer {
 
 @font-face {
   font-family: DINPro;
-  src: url(/fonts/DINPro.ttf);
+  src: url(../fonts/DINPro.ttf);
 }
 .burger {
   display: none;
@@ -389,7 +389,7 @@ ul.telin li a {
 .wrap5 {
   height: 100%;
   background-color: cadetblue;
-  background-image: url(../../images/back17.jpg);
+  background-image: url(../images/back17.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -428,7 +428,7 @@ section {
 .wrap6 {
   height: 100%;
   background-color: cadetblue;
-  background-image: url(../../images/back9.png);
+  background-image: url(../images/back9.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -467,7 +467,7 @@ section {
 .wrap7 {
   height: 100%;
   background-color: cadetblue;
-  background-image: url(../../images/5back5.png);
+  background-image: url(../images/5back5.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -506,7 +506,7 @@ section {
 .wrap8 {
   height: 100%;
   background-color: cadetblue;
-  background-image: url(../../images/back25.jpg);
+  background-image: url(../images/back25.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -678,7 +678,7 @@ a:hover {
   top: 260px;
   left: 15px;
   background: rgba(204, 216, 219, 0.6);
-  background-image: url(../../images/backacsess.jpg);
+  background-image: url(../images/backacsess.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: color;
@@ -759,7 +759,7 @@ a:hover {
     top: 260px;
     left: 8px;
     background: rgba(158, 158, 158, 0.8);
-    background-image: url(../../images/backacsess.jpg);
+    background-image: url(../images/backacsess.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-blend-mode: color;

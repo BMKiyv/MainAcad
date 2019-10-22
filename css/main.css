@@ -1,6 +1,6 @@
 @font-face {
   font-family: DINPro;
-  src: url(/fonts/DINPro.ttf);
+  src: url(../fonts/DINPro.ttf);
 }
 .burger {
   display: none;

@@ -63,7 +63,7 @@ footer {
 
 @font-face {
   font-family: DINPro;
-  src: url(/fonts/DINPro.ttf);
+  src: url(../fonts/DINPro.ttf);
 }
 .burger {
   display: none;
@@ -338,7 +338,7 @@ ul.telin li a {
 .wrap5 {
   height: 100%;
   background-color: cadetblue;
-  background-image: url(../../images/back29.jpg);
+  background-image: url(../images/back29.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
