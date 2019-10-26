@@ -23,21 +23,13 @@ $(document).ready(function() {
         ]
     });
 });
-let list = document.querySelectorAll('.ul.city')
-let city = document.querySelectorAll('#inp');
-for (let elem of list)
-    elem.addEventListener('click', function(event) {
-        if (event.elem.mouseout) {
-            elem.style.top = '-975%'
-            console.log(event.elem.mouseout)
-        }
-    });
-let burger = "",
+
+let burger = '',
     medianav = document.querySelector('.navbar'),
     sect = document.querySelector('.central');
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     burger = document.getElementById('burger')
-    burger.addEventListener("click", toggleBurger)
+    burger.addEventListener('click', toggleBurger)
 });
 
 function toggleBurger() {
@@ -53,8 +45,7 @@ function toggleBurger() {
     }
 }
 
-let cityName = document.querySelectorAll('.cities'),
-    cityShow = document.querySelector('.geo'),
+let cityShow = document.querySelector('.geo'),
     cityBlock = document.querySelector('.city'),
     cityArea = document.querySelector('.hidlabel1'),
     templ = '';
@@ -64,7 +55,37 @@ cityBlock.addEventListener('click', function(event) {
         y = cityArea.innerHTML;
     cityArea.innerHTML = x.innerHTML
     x.innerHTML = y
-    templ = y
     templ = cityArea.innerHTML
         // console.log(templ)
+    if (cityArea.innerHTML !== 'Киев') {
+        cityShow.classList.add('expand')
+    } else cityShow.classList.remove('expand')
+});
+
+let telShow = document.querySelector('.tel'),
+    telBlock = document.querySelector('.telin'),
+    telArea = document.querySelector('.hidlabel2'),
+    temptel = '';
+
+telBlock.addEventListener('click', function(event) {
+    let x = event.target,
+        y = telArea.innerHTML;
+    telArea.innerHTML = x.innerHTML
+    x.innerHTML = y
+    temptel = telArea.innerHTML
+});
+let lang = document.querySelector('.box2'),
+    rus = lang.firstElementChild,
+    ukr = lang.lastElementChild;
+rus.classList.add('rusfont');
+
+lang.addEventListener('click', function() {
+    if (rus.classList.contains('rusfont')) {
+        rus.classList.remove('rusfont')
+        ukr.classList.add('rusfont')
+
+    } else {
+        rus.classList.add('rusfont')
+        ukr.classList.remove('rusfont')
+    }
 });

@@ -15,7 +15,7 @@
 }
 
 .mtopfirst {
-    margin-top: 124px;
+    margin-top: 120px;
 }
 
 .maxwidth {
@@ -213,7 +213,10 @@ a:hover {
 
 @media(max-width:767px) {
     .mtopfirst {
-        margin-top: 74px;
+        margin-top: 68px;
+    }
+    .form {
+        width: 90%;
     }
     .warning {
         display: none;
