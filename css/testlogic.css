@@ -351,10 +351,6 @@ ul.telin {
   ul.telin {
     top: -130px;
   }
-
-  #inputT:checked + .cloneBox3 > .tel ul.telin {
-    top: 50%;
-  }
 }
 .wrap0 {
   height: 100%;
