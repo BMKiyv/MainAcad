@@ -24,27 +24,86 @@ $(document).ready(function() {
     });
 });
 
-let burger = '',
+let burger = "",
+    count = 0,
     medianav = document.querySelector('.navbar'),
-    sect = document.querySelector('.central');
-document.addEventListener('DOMContentLoaded', function() {
-    burger = document.getElementById('burger')
-    burger.addEventListener('click', toggleBurger)
+    sect = document.getElementsByClassName('central');
+document.addEventListener("DOMContentLoaded", function() {
+    burger = document.getElementById('burger'),
+        box2 = document.querySelector('.box2'),
+        box3 = document.querySelector('.box3'),
+        _box2 = box2.cloneNode(true),
+        _box3 = box3.cloneNode(true),
+        _inp = _box3.firstElementChild,
+        _tel = _box3.lastElementChild,
+        _lab = _tel.firstElementChild;
+    _box2.setAttribute('class', 'cloneBox2')
+    _box3.setAttribute('class', 'cloneBox3')
+    _rus = _box2.firstElementChild,
+        _ukr = _box2.lastElementChild;
+    _rus.classList.remove('rusfont')
+    _rus.classList.add('languige');
+    burger.addEventListener("click", toggleBurger)
 });
 
+function telephones(x, y) {
+    x.addEventListener('click', function() {
+
+        if (count == 0) {
+            y.style.right = '0px'
+            count++
+        } else if (count == 1) {
+            y.style.right = '-300px'
+            count--
+
+        }
+
+    })
+};
+
+
 function toggleBurger() {
-    if (burger.classList.contains("active")) {
-        burger.classList.remove("active")
-        medianav.classList.remove("active")
-        sect.classList.remove("active");
-        console.log(medianav.classList);
-    } else {
-        burger.classList += " active"
-        medianav.classList.add("active")
-        sect.classList.add("active")
+
+
+    for (item of sect) {
+
+
+
+        if (burger.classList.contains("active")) {
+            burger.classList.remove("active")
+            medianav.classList.remove("active")
+            item.classList.remove("active")
+            _box2.classList.remove('cloneBox2')
+            _box3.classList.remove('cloneBox3')
+            _box2.remove()
+            _box3.remove()
+
+        } else {
+            burger.classList += " active"
+            medianav.classList.add("active")
+            item.classList.add("active")
+            _box2.classList.add('cloneBox2')
+            _box3.classList.add('cloneBox3')
+            medianav.append(_box2);
+            medianav.append(_box3);
+            telephones(_box3, _lab);
+
+            _box2.addEventListener('click', function() {
+                if (_rus.classList.contains('languige')) {
+                    _rus.classList.remove('languige')
+                    _ukr.classList.add('languige')
+
+                } else {
+                    _rus.classList.add('languige')
+                    _ukr.classList.remove('languige')
+
+                }
+            })
+
+        }
+        break
     }
 }
-
 let cityShow = document.querySelector('.geo'),
     cityBlock = document.querySelector('.city'),
     cityArea = document.querySelector('.hidlabel1'),
@@ -56,7 +115,6 @@ cityBlock.addEventListener('click', function(event) {
     cityArea.innerHTML = x.innerHTML
     x.innerHTML = y
     templ = cityArea.innerHTML
-        // console.log(templ)
     if (cityArea.innerHTML !== 'Киев') {
         cityShow.classList.add('expand')
     } else cityShow.classList.remove('expand')
@@ -87,5 +145,6 @@ lang.addEventListener('click', function() {
     } else {
         rus.classList.add('rusfont')
         ukr.classList.remove('rusfont')
+
     }
 });

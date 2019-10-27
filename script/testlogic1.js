@@ -35,8 +35,8 @@ function watch() {
     b = false
 
     for (let i = visiblity; i < cont.length; i++) {
-
         cont[i].style.display = 'block'
+            //cont[i].classList.add('act')
         visible = cont[i]
         visiblity = +i
         for (let j = visiblity; j < cont.length; j++) {
@@ -104,7 +104,8 @@ for (let i = visiblity; i < start.length; i++) {
             } else if (b == true) {
                 visiblity++;
                 result += a;
-                visible.style.display = 'none';
+                // visible.classList.add('active');
+                visible.style.display = 'none'
                 watch();
             }
 

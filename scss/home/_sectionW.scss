@@ -20,7 +20,7 @@
 }
 
 .mtopfirst {
-    margin-top: 90px;
+    margin-top: 121px;
 }
 
 .maxwidth {
@@ -35,6 +35,21 @@ section {
     position: relative;
     height: 100%;
     width: 100%
+}
+
+@media(max-width:767px) {
+    .mtopfirst {
+        margin-top: 68px;
+    }
+    .maxwidth {
+        padding: 10px 10px 30px 10px;
+    }
+    section {
+        height: 470px;
+    }
+    .text {
+        width: 80%;
+    }
 }
 
 // Variables

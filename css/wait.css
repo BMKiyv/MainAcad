@@ -12,54 +12,6 @@ footer {
   box-shadow: 0px 1px 4px;
 }
 
-.navbar {
-  display: flex;
-}
-.navbar ul {
-  display: flex;
-  list-style: none;
-  flex-grow: 1;
-  justify-content: space-evenly;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: black;
-}
-@media (max-width: 767px) {
-  .navbar {
-    display: block;
-    position: absolute;
-    height: 400px;
-    width: 158px;
-    top: 73px;
-    right: -170px;
-    transform: translateX(150px);
-    transition: all 0.3s 0.3s;
-  }
-  .navbar ul {
-    list-style: none;
-    display: block;
-  }
-  .navbar ul li {
-    margin-top: 20px;
-  }
-}
-
-.wrapHeader {
-  background-color: #ffffff;
-  box-shadow: 0px 0px 5px -1px;
-}
-
-.maxw {
-  margin: 0px auto;
-  max-width: 1280px;
-}
-
-.wrapNavbar {
-  background-color: #f5f5f5;
-  box-shadow: 0px 1px 4px;
-}
-
 @font-face {
   font-family: DINPro;
   src: url(../fonts/DINPro.ttf);
@@ -351,6 +303,54 @@ ul.telin {
     top: -130px;
   }
 }
+.navbar {
+  display: flex;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 767px) {
+  .navbar {
+    display: block;
+    position: absolute;
+    height: 400px;
+    width: 158px;
+    top: 73px;
+    right: -170px;
+    transform: translateX(150px);
+    transition: all 0.3s 0.3s;
+  }
+  .navbar ul {
+    list-style: none;
+    display: block;
+  }
+  .navbar ul li {
+    margin-top: 20px;
+  }
+}
+
+.wrapHeader {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px -1px;
+}
+
+.maxw {
+  margin: 0px auto;
+  max-width: 1280px;
+}
+
+.wrapNavbar {
+  background-color: #f5f5f5;
+  box-shadow: 0px 1px 4px;
+}
+
 .wrap {
   height: 100%;
   background-color: cadetblue;
@@ -373,7 +373,7 @@ ul.telin {
 }
 
 .mtopfirst {
-  margin-top: 90px;
+  margin-top: 121px;
 }
 
 .maxwidth {
@@ -390,6 +390,23 @@ section {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .mtopfirst {
+    margin-top: 68px;
+  }
+
+  .maxwidth {
+    padding: 10px 10px 30px 10px;
+  }
+
+  section {
+    height: 470px;
+  }
+
+  .text {
+    width: 80%;
+  }
+}
 html {
   height: 100%;
 }

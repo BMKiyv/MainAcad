@@ -396,6 +396,27 @@ section {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .mtopfirst {
+    margin-top: 68px;
+  }
+
+  .maxwidth {
+    padding: 10px 10px 30px 10px;
+  }
+
+  section {
+    height: 470px;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .inform {
+    padding: 10px 0px 0px 0px;
+  }
+}
 .b1 {
   font-family: "DINPro";
   margin: 0px;
