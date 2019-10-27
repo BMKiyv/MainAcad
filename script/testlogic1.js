@@ -75,6 +75,23 @@ function watchR() {
     }
 };
 
+function atention() {
+    console.log(visiblity)
+    for (let i = 0; i < myForms.length; i++) {
+        if (i == visiblity) {
+            let sms = document.createElement('div')
+            sms.innerHTML = 'Чтобы перейти к следующему вопросу, нужно ответить на этот.'
+            sms.className = 'warning'
+            sms.style.display = 'block'
+            myForms[i].append(sms)
+            console.log(sms);
+            setTimeout(() => {
+                sms.style.display = 'none'
+            }, 3000)
+        }
+    }
+}
+
 for (let i = visiblity; i < start.length; i++) {
 
     start[i].addEventListener('click', function() {
@@ -83,10 +100,7 @@ for (let i = visiblity; i < start.length; i++) {
         if (start[i] !== start[start.length - 1]) {
             if (b == false) {
                 visiblity = visiblity;
-                watch(warn.style.display = 'block',
-                    setTimeout(() => {
-                        warn.style.display = 'none'
-                    }, 3000));
+                watch(atention());
             } else if (b == true) {
                 visiblity++;
                 result += a;
@@ -97,10 +111,7 @@ for (let i = visiblity; i < start.length; i++) {
         } else if (start[i] == start[start.length - 1]) {
             if (b == false) {
                 visiblity = visiblity;
-                watch(warn.style.display = 'block',
-                    setTimeout(() => {
-                        warn.style.display = 'none'
-                    }, 3000));
+                watch(atention());
             } else if (b == true) {
                 result += a;
                 visible.style.display = 'none'
@@ -140,9 +151,10 @@ document.addEventListener("DOMContentLoaded", function() {
         _lab = _tel.firstElementChild;
     _box2.setAttribute('class', 'cloneBox2')
     _box3.setAttribute('class', 'cloneBox3')
-    rus = _box2.firstElementChild,
-        ukr = _box2.lastElementChild;
-    rus.classList.add('rusfont');
+    _rus = _box2.firstElementChild,
+        _ukr = _box2.lastElementChild;
+    _rus.classList.remove('rusfont')
+    _rus.classList.add('languige');
     burger.addEventListener("click", toggleBurger)
 });
 
@@ -189,13 +201,13 @@ function toggleBurger() {
             telephones(_box3, _lab);
 
             _box2.addEventListener('click', function() {
-                if (rus.classList.contains('rusfont')) {
-                    rus.classList.remove('rusfont')
-                    ukr.classList.add('rusfont')
+                if (_rus.classList.contains('languige')) {
+                    _rus.classList.remove('languige')
+                    _ukr.classList.add('languige')
 
                 } else {
-                    rus.classList.add('rusfont')
-                    ukr.classList.remove('rusfont')
+                    _rus.classList.add('languige')
+                    _ukr.classList.remove('languige')
 
                 }
             })
