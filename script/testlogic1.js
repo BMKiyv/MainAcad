@@ -138,6 +138,7 @@ for (i = 0; i < myForms.length; i++) {
 }
 
 let burger = "",
+    temp = "",
     count = 0,
     medianav = document.querySelector('.navbar'),
     sect = document.getElementsByClassName('central');
@@ -149,21 +150,25 @@ document.addEventListener("DOMContentLoaded", function() {
         _box3 = box3.cloneNode(true),
         _inp = _box3.firstElementChild,
         _tel = _box3.lastElementChild,
-        _lab = _tel.firstElementChild;
+        _ul = _tel.firstElementChild,
+        _lab = _tel.lastElementChild;
     _box2.setAttribute('class', 'cloneBox2')
     _box3.setAttribute('class', 'cloneBox3')
     _rus = _box2.firstElementChild,
-        _ukr = _box2.lastElementChild;
+        _ukr = _box2.lastElementChild,
+        _showtel = _lab.firstElementChild;
     _rus.classList.remove('rusfont')
-    _rus.classList.add('languige');
-    burger.addEventListener("click", toggleBurger)
+    _rus.classList.add('languige'),
+
+
+        burger.addEventListener("click", toggleBurger)
 });
 
 function telephones(x, y) {
     x.addEventListener('click', function() {
 
         if (count == 0) {
-            y.style.right = '0px'
+            y.style.right = '148px'
             count++
         } else if (count == 1) {
             y.style.right = '-300px'
@@ -172,6 +177,32 @@ function telephones(x, y) {
         }
 
     })
+};
+
+function showTelephones() {
+    _ul.addEventListener('click', function(event) {
+        let x = event.target,
+            y = _showtel.innerHTML;
+        _showtel.innerHTML = x.innerHTML
+        x.innerHTML = y
+        temp = _showtel.innerHTML
+    })
+
+};
+
+function showLang() {
+    _box2.addEventListener('click', function() {
+        if (_rus.classList.contains('languige')) {
+            _rus.classList.remove('languige')
+            _ukr.classList.add('languige')
+
+        } else {
+            _rus.classList.add('languige')
+            _ukr.classList.remove('languige')
+
+        }
+    })
+
 };
 
 
@@ -190,6 +221,9 @@ function toggleBurger() {
             _box3.classList.remove('cloneBox3')
             _box2.remove()
             _box3.remove()
+            telephones(_lab, _ul);
+            showTelephones();
+            showLang();
 
         } else {
             burger.classList += " active"
@@ -199,19 +233,10 @@ function toggleBurger() {
             _box3.classList.add('cloneBox3')
             medianav.append(_box2);
             medianav.append(_box3);
-            telephones(_box3, _lab);
+            telephones(_lab, _ul);
+            showTelephones();
+            showLang();
 
-            _box2.addEventListener('click', function() {
-                if (_rus.classList.contains('languige')) {
-                    _rus.classList.remove('languige')
-                    _ukr.classList.add('languige')
-
-                } else {
-                    _rus.classList.add('languige')
-                    _ukr.classList.remove('languige')
-
-                }
-            })
 
         }
         break
@@ -260,8 +285,7 @@ lang.addEventListener('click', function() {
         ukr.classList.remove('rusfont')
 
     }
-})
-
+});
 
 
 
@@ -273,14 +297,8 @@ body[0].addEventListener('click', function(event) {
         if (share == event.target) {
             FB.ui({
                     method: 'share',
-                    action_properties: JSON.stringify({
-                        object: {
-                            'og:url': 'http://firsttest.ho.ua/project1/testlogic1.html',
-                            'og:title': 'Я прошел сложнейший тест в Main Academy,',
-                            'og:description': '...и мне просто не терпится поделиться об этом невероятном событии со всеми моими друзьями!!!:',
-                            'og:image': 'http://firsttest.ho.ua/project1/images/back26.jpg'
-                        }
-                    })
+
+                    href: 'http://firsttest.ho.ua/project1/testlogic1.html',
                 },
                 // callback
                 function(response) {

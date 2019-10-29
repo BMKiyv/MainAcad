@@ -20,13 +20,13 @@ footer {
   display: flex;
   list-style: none;
   flex-grow: 1;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .navbar ul li a {
   text-decoration: none;
   color: black;
 }
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .navbar {
     display: block;
     position: absolute;
@@ -247,7 +247,7 @@ ul.telin {
   font-weight: bold;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .burger {
     width: 40px;
     height: 40px;
@@ -301,7 +301,7 @@ ul.telin {
   .navbar.active {
     display: block;
     position: absolute;
-    height: 468px;
+    height: 400px;
     width: 158px;
     top: 73px;
     right: 151px;
@@ -332,7 +332,7 @@ ul.telin {
     position: absolute;
     display: block;
     right: 58px;
-    top: 379px;
+    top: 305px;
     cursor: pointer;
   }
 
@@ -344,12 +344,17 @@ ul.telin {
     position: absolute;
     z-index: 100;
     display: block;
-    right: 5px;
-    top: 417px;
+    right: 7px;
+    top: 352px;
   }
 
   ul.telin {
-    top: -130px;
+    top: -90px;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .box3 {
+    margin-right: -15px;
   }
 }
 .wrap0 {
@@ -599,6 +604,7 @@ section {
 }
 
 #start {
+  margin-top: 10px;
   outline-style: none;
   width: 150px;
   height: 50px;
@@ -616,7 +622,7 @@ section {
 }
 
 section {
-  padding: 60px 0px;
+  padding: 60px 0px 90px 0px;
   position: relative;
   min-height: 320px;
 }
@@ -759,7 +765,7 @@ a:hover {
   background: blueviolet;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .mtopfirst {
     margin-top: 68px;
   }
@@ -778,6 +784,31 @@ a:hover {
 
   .inform {
     padding: 10px 0px 0px 0px;
+  }
+
+  .end {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .again {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .mtopfirst {
+    margin-top: 120px;
+  }
+
+  .form {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .form {
+    width: 60%;
   }
 }
 

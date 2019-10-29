@@ -184,7 +184,7 @@ ul.telin {
   font-weight: bold;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .burger {
     width: 40px;
     height: 40px;
@@ -238,7 +238,7 @@ ul.telin {
   .navbar.active {
     display: block;
     position: absolute;
-    height: 468px;
+    height: 400px;
     width: 158px;
     top: 73px;
     right: 151px;
@@ -269,7 +269,7 @@ ul.telin {
     position: absolute;
     display: block;
     right: 58px;
-    top: 379px;
+    top: 305px;
     cursor: pointer;
   }
 
@@ -281,12 +281,17 @@ ul.telin {
     position: absolute;
     z-index: 100;
     display: block;
-    right: 5px;
-    top: 417px;
+    right: 7px;
+    top: 352px;
   }
 
   ul.telin {
-    top: -130px;
+    top: -90px;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .box3 {
+    margin-right: -15px;
   }
 }
 .navbar {
@@ -296,13 +301,13 @@ ul.telin {
   display: flex;
   list-style: none;
   flex-grow: 1;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .navbar ul li a {
   text-decoration: none;
   color: black;
 }
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .navbar {
     display: block;
     position: absolute;

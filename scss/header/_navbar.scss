@@ -4,13 +4,13 @@
         display: flex;
         list-style: none;
         flex-grow: 1;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     ul li a {
         text-decoration: none;
         color: black;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 600px) {
         display: block;
         position: absolute;
         height: 400px;
