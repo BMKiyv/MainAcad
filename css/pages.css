@@ -25,6 +25,9 @@ footer {
   text-decoration: none;
   color: black;
 }
+.navbar ul :hover {
+  color: darkcyan;
+}
 @media (max-width: 600px) {
   .navbar {
     display: block;
@@ -125,6 +128,10 @@ ul.city {
 ul.city li a {
   text-decoration: none;
   color: black;
+}
+ul.city :hover {
+  background: beige;
+  color: darkcyan;
 }
 
 .tel {

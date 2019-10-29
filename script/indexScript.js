@@ -55,7 +55,7 @@ function telephones(x, y) {
     x.addEventListener('click', function() {
 
         if (count == 0) {
-            y.style.right = '0px'
+            y.style.right = '148px'
             count++
         } else if (count == 1) {
             y.style.right = '-300px'
@@ -75,7 +75,22 @@ function showTelephones() {
         temp = _showtel.innerHTML
     })
 
-}
+};
+
+function showLang() {
+    _box2.addEventListener('click', function() {
+        if (_rus.classList.contains('languige')) {
+            _rus.classList.remove('languige')
+            _ukr.classList.add('languige')
+
+        } else {
+            _rus.classList.add('languige')
+            _ukr.classList.remove('languige')
+
+        }
+    })
+
+};
 
 
 function toggleBurger() {
@@ -93,6 +108,9 @@ function toggleBurger() {
             _box3.classList.remove('cloneBox3')
             _box2.remove()
             _box3.remove()
+            telephones(_lab, _ul);
+            showTelephones();
+            showLang();
 
         } else {
             burger.classList += " active"
@@ -104,18 +122,8 @@ function toggleBurger() {
             medianav.append(_box3);
             telephones(_lab, _ul);
             showTelephones();
+            showLang();
 
-            _box2.addEventListener('click', function() {
-                if (_rus.classList.contains('languige')) {
-                    _rus.classList.remove('languige')
-                    _ukr.classList.add('languige')
-
-                } else {
-                    _rus.classList.add('languige')
-                    _ukr.classList.remove('languige')
-
-                }
-            })
 
         }
         break

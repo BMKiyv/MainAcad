@@ -26,6 +26,9 @@ footer {
   text-decoration: none;
   color: black;
 }
+.navbar ul :hover {
+  color: darkcyan;
+}
 @media (max-width: 600px) {
   .navbar {
     display: block;
@@ -126,6 +129,10 @@ ul.city {
 ul.city li a {
   text-decoration: none;
   color: black;
+}
+ul.city :hover {
+  background: beige;
+  color: darkcyan;
 }
 
 .tel {
@@ -732,37 +739,39 @@ a:hover {
 }
 
 .again {
-  outline-style: none;
   width: 150px;
   height: 50px;
   border: 1px solid grey;
   border-radius: 5px;
-  background-color: red;
+  background-color: #f73d4a;
   font-size: 18px;
   font-weight: 400;
-  color: grey;
+  color: white;
   cursor: pointer;
+  padding-top: 8px;
+  line-height: 18px;
 }
 
 .again:hover {
-  background: brown;
+  background: #f7518e;
+  color: white;
 }
 
 .s1 {
   outline-style: none;
   width: 150px;
-  height: 50px;
+  height: 61px;
   border: 1px solid grey;
   border-radius: 5px;
-  background-color: blue;
+  background-color: #1e5a96;
   font-size: 18px;
   font-weight: 400;
-  color: grey;
+  color: white;
   cursor: pointer;
 }
 
 .s1:hover {
-  background: blueviolet;
+  background: #4096ed;
 }
 
 @media (max-width: 600px) {

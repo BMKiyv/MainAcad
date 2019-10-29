@@ -64,6 +64,10 @@ ul.city li a {
   text-decoration: none;
   color: black;
 }
+ul.city :hover {
+  background: beige;
+  color: darkcyan;
+}
 
 .tel {
   position: relative;
@@ -307,6 +311,9 @@ ul.telin {
   text-decoration: none;
   color: black;
 }
+.navbar ul :hover {
+  color: darkcyan;
+}
 @media (max-width: 600px) {
   .navbar {
     display: block;
@@ -347,6 +354,7 @@ section {
 }
 
 a {
+  outline: none;
   text-decoration: none;
   color: antiquewhite;
 }

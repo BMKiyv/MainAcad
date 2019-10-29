@@ -5,10 +5,14 @@
         list-style: none;
         flex-grow: 1;
         justify-content: space-around;
-    }
-    ul li a {
-        text-decoration: none;
-        color: black;
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+         :hover {
+            color: darkcyan;
+            ;
+        }
     }
     @media (max-width: 600px) {
         display: block;

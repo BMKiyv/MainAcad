@@ -211,8 +211,6 @@ function toggleBurger() {
 
     for (item of sect) {
 
-
-
         if (burger.classList.contains("active")) {
             burger.classList.remove("active")
             medianav.classList.remove("active")
