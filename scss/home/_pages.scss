@@ -1,11 +1,11 @@
-.central {
+section {
     padding: 60px 0px 90px 0px;
     position: relative;
     min-height: 320px;
 }
 
 @media(max-width:600px) {
-    .central {
+    section {
         height: 985px;
     }
 }
