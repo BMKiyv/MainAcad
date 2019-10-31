@@ -1,3 +1,23 @@
+window.fbAsyncInit = function() {
+    FB.init({
+        appId: '934445156889828',
+        autoLogAppEvents: true,
+        xfbml: true,
+        status: true,
+        cookies: true,
+        version: 'v4.0'
+    });
+};
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
 let burger = "",
     temp = "",
     count = 0,
@@ -145,5 +165,49 @@ lang.addEventListener('click', function() {
         rus.classList.add('rusfont')
         ukr.classList.remove('rusfont')
 
+    }
+});
+
+let sharing = document.querySelector('.share'),
+    body = document.getElementsByClassName('b1'),
+    contr = document.querySelector('.form'),
+    var1 = 'Благодарим Вас за внимание, всегда рады видеть Вас снова!',
+    var2 = 'Ой, что-то пошло не так, или не туда',
+    answer = document.createElement('div');
+answer.classList.add('answer')
+
+
+function showResp(x) {
+    answer.innerHTML = x
+    contr.prepend(answer)
+};
+
+
+
+body[0].addEventListener('click', function(event) {
+    console.log(sharing)
+
+    if (sharing == event.target) {
+
+
+        FB.ui({
+                method: 'share',
+
+                href: 'http://firsttest.ho.ua/project1/testlogic1.html',
+            },
+            function(response) {
+                if (response && !response.error_message) {
+                    showResp(var1)
+                    setTimeout(function changeLoc() {
+                        let url = 'http://www.firsttest.ho.ua/project1/index.html'
+                        x = window.location.replace(url)
+                        return x
+                    }, 3000);
+
+                } else {
+                    showResp(var2)
+                    setTimeout(function() { answer.style.display = 'none' }, 3000)
+                }
+            });
     }
 });

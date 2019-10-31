@@ -22,6 +22,7 @@ let a = 0,
     result = 0,
     visiblity = 0,
     visiblityR = 0,
+    visibleR = 0,
     visible,
     b,
     start = document.querySelectorAll('.s'),
@@ -63,7 +64,7 @@ function watchR() {
     for (let i = visiblityR; i < contR.length; i++) {
         if (i == visiblityR) {
             contR[i].style.display = 'block';
-            visibleR = contR[i];
+            visibleR = i;
             for (let j = visiblityR; j < contR.length; j++) {
                 if (j !== i) {
                     contR[j].style = "display:none"
@@ -205,7 +206,6 @@ function showLang() {
 
 };
 
-
 function toggleBurger() {
 
 
@@ -287,27 +287,54 @@ lang.addEventListener('click', function() {
 
 
 
+
+
 let sharing = document.querySelectorAll('.share'),
-    body = document.getElementsByClassName('b1');
+    body = document.getElementsByClassName('b1'),
+    contr = document.querySelectorAll('.contR'),
+    var1 = 'Благодарим Вас за внимание, всегда рады видеть Вас снова!',
+    var2 = 'Ой, что-то пошло не так, или не туда',
+    answer = document.createElement('div')
+respAns = '';
+
+function showResp(x) {
+    for (let i = visibleR; i < contr.length; i++) {
+        if (contr[i].style.display == 'block') {
+            console.log(contr[i])
+            respAns = contr[i]
+        }
+
+    }
+
+    answer.innerHTML = x
+    answer.classList.add('answer')
+    respAns.append(answer)
+}
+
+
 
 body[0].addEventListener('click', function(event) {
+
+
     for (share of sharing) {
         if (share == event.target) {
-            FB.ui({
-                    method: 'share',
 
-                    href: 'http://firsttest.ho.ua/project1/testlogic1.html',
-                },
-                // callback
-                function(response) {
-                    if (response && !response.error_message) {
-                        // then get post content
-                        alert('successfully posted. Status id : ' + response.post_id);
-                    } else {
-                        alert('Something went error.');
-                    }
-                })
+
+
+            function metaTag() {
+                let prof = document.getElementsByName('fbshare'),
+                    newName = '',
+                    url = `http://www.firsttest.ho.ua/project1/${newName}.html`,
+                    x = window.location.replace(url);
+                for (let i = visibleR; i < prof.length; i++) {
+                    newName = prof[i].innerHTML
+                    break
+                }
+                return x
+            }
+            metaTag()
         }
     }
+
 
 });

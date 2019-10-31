@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: DINPro;
   src: url(../fonts/DINPro.ttf);
@@ -383,16 +384,10 @@ ul.telin {
   margin: 0px auto;
 }
 
-.central {
-  position: relative;
-  margin-top: 71px;
-  overflow: hidden;
-}
-
 .wrap5 {
   height: 100%;
   background-color: cadetblue;
-  background-image: url(../images/back29.jpg);
+  background-image: url(../images/back17.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -408,6 +403,334 @@ section {
   position: relative;
 }
 
+.mtopfirst {
+  margin-top: 124px;
+}
+
+.form {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #4d6188;
+  text-align: center;
+  width: 50%;
+  opacity: 0.8;
+}
+
+.maxwidth {
+  background: #dbdfe3;
+  max-width: 1280px;
+  padding: 10px 10px;
+  margin: 0px auto;
+}
+
+.wrap6 {
+  height: 100%;
+  background-color: cadetblue;
+  background-image: url(../images/back9.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section {
+  padding: 60px 0px;
+  position: relative;
+}
+
+.mtopfirst {
+  margin-top: 124px;
+}
+
+.form {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #4d6188;
+  text-align: center;
+  width: 50%;
+  opacity: 0.8;
+}
+
+.maxwidth {
+  background: #dbdfe3;
+  max-width: 1280px;
+  padding: 10px 10px;
+  margin: 0px auto;
+}
+
+.wrap7 {
+  height: 100%;
+  background-color: cadetblue;
+  background-image: url(../images/5back5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section {
+  padding: 60px 0px;
+  position: relative;
+}
+
+.mtopfirst {
+  margin-top: 124px;
+}
+
+.form {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #4d6188;
+  text-align: center;
+  width: 50%;
+  opacity: 0.8;
+}
+
+.maxwidth {
+  background: #dbdfe3;
+  max-width: 1280px;
+  padding: 10px 10px;
+  margin: 0px auto;
+}
+
+.wrap8 {
+  height: 100%;
+  background-color: cadetblue;
+  background-image: url(../images/back25.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section {
+  padding: 60px 0px;
+  position: relative;
+}
+
+.b1 {
+  font-family: "DINPro";
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inform {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.form {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #4d6188;
+  text-align: center;
+  width: 50%;
+  opacity: 0.8;
+}
+
+.mtopfirst {
+  margin-top: 120px;
+}
+
+.maxwidth {
+  background: #dbdfe3;
+  max-width: 1280px;
+  padding: 10px 10px;
+  margin: 0px auto;
+}
+
+#start {
+  margin-top: 10px;
+  outline-style: none;
+  width: 150px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: burlywood;
+  font-size: 18px;
+  font-weight: 400;
+  color: grey;
+  cursor: pointer;
+}
+
+#start:hover {
+  background: #e0a482;
+}
+
+section {
+  padding: 60px 0px 90px 0px;
+  position: relative;
+  min-height: 320px;
+}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.option-input:hover {
+  background: #9faab7;
+}
+
+.option-input:checked {
+  background: #40e0d0;
+}
+
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.option-input.radio {
+  border-radius: 50%;
+}
+
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #4d6188;
+}
+
+a:hover {
+  color: #5b5858;
+}
+
+.warning {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 10px;
+  color: red;
+}
+
+.cont,
+.contR {
+  display: none;
+}
+
+.end {
+  display: flex;
+  justify-content: space-around;
+}
+
+.again {
+  width: 150px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #f73d4a;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  padding-top: 8px;
+  line-height: 18px;
+}
+
+.again:hover {
+  background: #f7518e;
+  color: white;
+}
+
+.s1 {
+  outline-style: none;
+  width: 150px;
+  height: 61px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #1e5a96;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+}
+
+.s1:hover {
+  background: #4096ed;
+}
+
+.answer {
+  position: absolute;
+  display: block;
+  top: 10%;
+  left: 4%;
+  width: 93%;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #4d6188;
+  text-align: center;
+  margin: 10px auto;
+}
+
 @media (max-width: 600px) {
   .mtopfirst {
     margin-top: 68px;
@@ -417,12 +740,27 @@ section {
     padding: 10px 10px 30px 10px;
   }
 
+  section {
+    height: 785px;
+  }
+
   .form {
     width: 90%;
   }
 
   .inform {
     padding: 10px 0px 0px 0px;
+  }
+
+  .end {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .again {
+    margin-bottom: 5px;
   }
 }
 @media (min-width: 601px) and (max-width: 767px) {
@@ -433,17 +771,30 @@ section {
   .form {
     width: 70%;
   }
+
+  .answer {
+    top: 20%;
+    width: 85%;
+    left: 6%;
+  }
 }
 @media (min-width: 768px) and (max-width: 899px) {
   .form {
     width: 60%;
   }
+
+  .answer {
+    top: 20%;
+    width: 75%;
+    left: 15%;
+  }
 }
-.b1 {
-  font-family: "DINPro";
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
+@media (min-width: 900px) {
+  .answer {
+    top: 20%;
+    width: 65%;
+    left: 20%;
+  }
 }
 
 /*# sourceMappingURL=pages.css.map */

@@ -43,6 +43,11 @@
         position: relative;
     }
     
+    .end {
+        display: flex;
+        justify-content: space-around;
+    }
+    
     @media(max-width:600px) {
         .mtopfirst {
             margin-top: 68px;
@@ -55,6 +60,12 @@
         }
         .inform {
             padding: 10px 0px 0px 0px;
+        }
+        .end {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
         }
     }
     
