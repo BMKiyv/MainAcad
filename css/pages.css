@@ -539,7 +539,7 @@ section {
   font-weight: 600;
   color: #4d6188;
   text-align: center;
-  width: 50%;
+  width: 60%;
   opacity: 0.8;
 }
 
@@ -704,7 +704,7 @@ a:hover {
 .s1 {
   outline-style: none;
   width: 150px;
-  height: 61px;
+  height: 50px;
   border: 1px solid grey;
   border-radius: 5px;
   background-color: #1e5a96;
@@ -712,6 +712,8 @@ a:hover {
   font-weight: 400;
   color: white;
   cursor: pointer;
+  padding-top: 8px;
+  line-height: 18px;
 }
 
 .s1:hover {
@@ -721,7 +723,7 @@ a:hover {
 .answer {
   position: absolute;
   display: block;
-  top: 10%;
+  top: 8%;
   left: 4%;
   width: 93%;
   font-size: 1.2em;
@@ -773,7 +775,7 @@ a:hover {
   }
 
   .answer {
-    top: 20%;
+    top: 13%;
     width: 85%;
     left: 6%;
   }
@@ -784,14 +786,14 @@ a:hover {
   }
 
   .answer {
-    top: 20%;
+    top: 14%;
     width: 75%;
     left: 15%;
   }
 }
 @media (min-width: 900px) {
   .answer {
-    top: 20%;
+    top: 14%;
     width: 65%;
     left: 20%;
   }
