@@ -193,7 +193,7 @@ body[0].addEventListener('click', function(event) {
         FB.ui({
                 method: 'share',
 
-                href: 'http://firsttest.ho.ua/Frontend.html',
+                href: 'http://firsttest.ho.ua/PHPDev.html',
             },
             function(response) {
                 if (response && !response.error_message) {

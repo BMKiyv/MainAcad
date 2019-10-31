@@ -799,7 +799,7 @@ a:hover {
   }
 
   section {
-    height: 785px;
+    height: 550px;
   }
 
   .form {
@@ -849,7 +849,7 @@ a:hover {
 }
 @media (min-width: 900px) {
   .answer {
-    top: 14%;
+    top: 18%;
     width: 65%;
     left: 20%;
   }

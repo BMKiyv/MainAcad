@@ -743,7 +743,7 @@ a:hover {
   }
 
   section {
-    height: 785px;
+    height: 550px;
   }
 
   .form {
@@ -793,9 +793,20 @@ a:hover {
 }
 @media (min-width: 900px) {
   .answer {
-    top: 14%;
+    top: 18%;
     width: 65%;
     left: 20%;
+  }
+}
+.central {
+  padding: 60px 0px 90px 0px;
+  position: relative;
+  min-height: 320px;
+}
+
+@media (max-width: 600px) {
+  .central {
+    height: 985px;
   }
 }
 
